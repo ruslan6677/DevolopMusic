@@ -42,7 +42,7 @@ def start(client, message):
                 ],
                 [ 
                   InlineKeyboardButton(
-                        "🔊 Playlis", url="https://t.me/MusicAzPlaylist"
+                        "🔊 Playlis", url=f"https://t.me/{Config.PLAYLIST_NAME}"
                     ),
                   InlineKeyboardButton(
                         " Botlarım", url=f"https://t.me/{Config.CHANNEL}"
