@@ -29,7 +29,7 @@ bot = Client(
 ## Əmrlər --------------------------------
 @bot.on_message(filters.command(['start']))
 def start(client, message):
-    MusicAzBot = f'**Salam** {message.from_user.mention}\n\n**ℹ️ [Mən](http://t.me/{Config.BOT_USERNAME})\n\nsizin üçün musiqini yükləmə botuyam.Məndən istifadə etmək çox asanddır🥰**\n\n**✅ Botun istifadə qaydasını öyrənmək üçün** /help **əmrindən istifadə edin**'
+    MusicAzBot = f'**Salam** {message.from_user.mention}\n\n**ℹ️ [Mən](http://t.me/{Config.BOT_USERNAME})\n\nsizin üçün musiqini yükləmə botuyam.Məndən istifadə etmək çox asanddır🥰**\n\n.** 1. /song `Payam Turk ft. İslam Şirvani — Mənəm Türk`\n**2.** /video  `Payam Turk ft. İslam Şirvani — Mənəm Türk`\n**'
     message.reply_text(
         text=MusicAzBot, 
         quote=False,
@@ -52,35 +52,6 @@ def start(client, message):
            ]
         ),
     )
-  
-#kömək mesajı  
-@bot.on_message(filters.command(['help']))
-def start(client, message):
-     await query.edit_message_text(
-f"**{Config.BOT_USERNAME} Əmrləri Bunlardır ⤵️**\n\n**Məsələn:**\n**1.** /song `Payam Turk ft. İslam Şirvani — Mənəm Türk`\n**2.** /video  `Payam Turk ft. İslam Şirvani — Mənəm Türk`\n**",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                  InlineKeyboardButton(
-                        "➕ ❰ Məni Qrupa Əlavə Et ❱ ➕", url=f"https://t.me/{Config.BOT_USERNAME}?startgroup=true"
-                    )
-                    
-                ],
-                [
-                  InlineKeyboardButton(
-                        "🔄 Geri Qayıt", callback_data="start"),
-                    InlineKeyboardButton(
-                        "🔙 bağla", callback_data="close"
-                    )
-                ]
-            ]
-        )
-    )  
-  
-
-@bot.on_callback_query(filters.regex("close"))
-async def close(_, query: CallbackQuery):
-    await query.message.delete()
   
   
 #alive mesaji
