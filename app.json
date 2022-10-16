@@ -51,6 +51,11 @@
             "description": "Botun kullanıcı adını @ bu işarə olmadan yazın.",
             "value": "",
             "required": true
+        },
+        "CHANNEL": {
+            "description": "Kanal Tag Adı @ olmadan yerləşdirin.",
+            "value": "",
+            "required": true            
         }
     },
     "buildpacks": [
