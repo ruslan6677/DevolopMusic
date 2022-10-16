@@ -36,9 +36,7 @@ def start(client, message):
          reply_markup=InlineKeyboardMarkup(
             [
                 [
-                                      InlineKeyboardButton(
-                        "➕ ❰ Məni Qrupa Əlavə Et ❱ ➕", url=f"https://t.me/{Config.BOT_USERNAME}?startgroup=true"
-                    )
+                                      InlineKeyboardButton('➕ ❰ Məni Qrupa Əlavə Et ❱ ➕', url=f'https://t.me/{Config.BOT_USERNAME}?startgroup=true')
                     InlineKeyboardButton('🤖Botlarımız🤖', url=f'https://t.me/{Config.CHANNEL}'),
                     InlineKeyboardButton('Söhbət qrupu👥', url='https://t.me/sjsjsj')
                   ],[
