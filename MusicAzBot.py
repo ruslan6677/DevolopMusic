@@ -35,11 +35,13 @@ def start(client, message):
         quote=False,
         reply_markup=InlineKeyboardMarkup(
             [[
-                    InlineKeyboardButton('📢 Kanalımız', url='https://t.me/sjsj'),
-                    InlineKeyboardButton('🤖Botlarımız🤖', url='https://t.me/Botlarm'),
+                                      InlineKeyboardButton(
+                        "➕ ❰ Məni Qrupa Əlavə Et ❱ ➕", url=f"https://t.me/{Config.BOT_USERNAME}?startgroup=true"
+                    )
+                    InlineKeyboardButton('🤖Botlarımız🤖', url=f'https://t.me/{Config.CHANNEL}'),
                     InlineKeyboardButton('Söhbət qrupu👥', url='https://t.me/sjsjsj')
                   ],[
-                    InlineKeyboardButton('Sahib', url='T.me/HuseynH')
+                    InlineKeyboardButton('Sahib', url=f'T.me/{Config.BOT_OWNER')
                 ]
             ]
         )
