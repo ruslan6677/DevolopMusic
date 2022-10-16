@@ -1,10 +1,10 @@
 {
-    "name": "MusicAzBot",
-    "description": "Azərbaycan dilində song botu.",
-    "logo": "https://telegra.ph//file/3ef614848d71e62eda33c.jpg",
+    "name": "@MusicAzBot",
+    "description": "Azərbaycan dilində Musiqi botu.",
+    "logo": "https://telegra.ph/file/37232da6ee1464e42a586.jpg",
     "keywords": [
-        "Demon",
         "Music",
+        "Az",
         "Bot"
     ],
     "repository": "https://github.com/",
