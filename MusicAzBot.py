@@ -31,9 +31,9 @@ bot = Client(
 def start(client, message):
     darkprince = f'[👋](https://telegra.ph/file/37232da6ee1464e42a586.jpg) Salam @{message.from_user.username}\n\nMən sizin üçün musiqini yükləmə botuyam.Məndən istifadə etmək çox asanddır.\nMusiqi  yükləmək üçün:\n1) /song (musiqi adı)\n2) /song (youtube linki)\n3 /video video adı\n4 /video (youtube linki) Xəta əmələ gələrsə sahiblə əlaqə yaradın'
     message.reply_text(
-        text=darkprince, 
+        text=MusicAzBot, 
         quote=False,
-       reply_markup=InlineKeyboardMarkup(
+         reply_markup=InlineKeyboardMarkup(
             [
                 [
                                       InlineKeyboardButton(
