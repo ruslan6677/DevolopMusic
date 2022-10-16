@@ -58,7 +58,7 @@ def start(client, message):
 def start(client, message):
    await query.edit_message_text(f"**{Config.BOT_USERNAME} Əmrləri Bunlardır ⤵️**\n\n**Məsələn:**\n**1.** /song `Payam Turk ft. İslam Şirvani — Mənəm Türk`\n**2.** /video  `Payam Turk ft. İslam Şirvani — Mənəm Türk`\n**
 
-",
+"),
         reply_markup=InlineKeyboardMarkup(
             [
                 [
