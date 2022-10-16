@@ -29,7 +29,7 @@ bot = Client(
 ## Əmrlər --------------------------------
 @bot.on_message(filters.command(['start']))
 def start(client, message):
-    MusicAzBot = f'**Salam** {message.from_user.mention}\n\n**ℹ️ [Mən](http://t.me/{Config.BOT_USERNAME})\n\nsizin üçün musiqini yükləmə botuyam.Məndən istifadə etmək çox asanddır🥰**\n\n.** 1. /song `Payam Turk ft. İslam Şirvani — Mənəm Türk`\n**2.** /video  `Payam Turk ft. İslam Şirvani — Mənəm Türk`\n**'
+    MusicAzBot = f'[👋](https://telegra.ph/file/37232da6ee1464e42a586.jpg) Salam @{message.from_user.username}\n\nMən sizin üçün musiqini yükləmə botuyam.Məndən istifadə etmək çox asanddır.\nMusiqi  yükləmək üçün:\n1) /song (musiqi adı)\n2) /song (youtube linki)\n3 /video video adı\n4 /video (youtube linki) Xəta əmələ gələrsə sahiblə əlaqə yaradın'
     message.reply_text(
         text=MusicAzBot, 
         quote=False,
