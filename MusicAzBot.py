@@ -45,7 +45,7 @@ def start(client, message):
                         "🔊 Playlis", url=f"https://t.me/{Config.PLAYLIST_NAME}"
                     ),
                   InlineKeyboardButton(
-                        " Botlarım", url=f"https://t.me/{Config.CHANNEL}"
+                        "👨‍💻 Sahib", url=f"https://t.me/{Config.BOT_OWNER}"
                     )                    
                 ]
                 
