@@ -50,7 +50,7 @@ def start(client, message):
                 ],
                 [                     
                   InlineKeyboardButton(
-                        "👨‍💻 Sahib", url=f"https://t.me/{Config.BOT_OWNER}"
+                        "🇦🇿 Botlarım", url=f"https://t.me/{Config.CHANNEL}"
                     )                    
                 ]
                 
