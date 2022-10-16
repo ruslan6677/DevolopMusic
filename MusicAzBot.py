@@ -33,8 +33,9 @@ def start(client, message):
     message.reply_text(
         text=darkprince, 
         quote=False,
-        reply_markup=InlineKeyboardMarkup(
-            [[
+       reply_markup=InlineKeyboardMarkup(
+            [
+                [
                                       InlineKeyboardButton(
                         "➕ ❰ Məni Qrupa Əlavə Et ❱ ➕", url=f"https://t.me/{Config.BOT_USERNAME}?startgroup=true"
                     )
