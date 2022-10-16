@@ -37,10 +37,11 @@ def start(client, message):
             [
                 [
                                       InlineKeyboardButton('➕ ❰ Məni Qrupa Əlavə Et ❱ ➕', url=f'https://t.me/{Config.BOT_USERNAME}?startgroup=true')
-                    InlineKeyboardButton('🤖Botlarımız🤖', url=f'https://t.me/{Config.CHANNEL}'),
-                    InlineKeyboardButton('Söhbət qrupu👥', url='https://t.me/sjsjsj')
+                  ],[  InlineKeyboardButton('🤖Botlarımız🤖', url=f'https://t.me/{Config.CHANNEL}'
+                    ),
+                   InlineKeyboardButton('Söhbət qrupu👥', url='https://t.me/sjsjsj')
                   ],[
-                    InlineKeyboardButton('Sahib', url=f'T.me/{Config.BOT_OWNER')
+                   InlineKeyboardButton('Sahib', url=f'T.me/{Config.BOT_OWNER')
                 ]
             ]
         )
