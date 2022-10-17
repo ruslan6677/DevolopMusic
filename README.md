@@ -1,4 +1,4 @@
-Botlarmız [BOTLARIM](https://t.me/DvBotlar)
+Botlar [BOTLARIM](https://t.me/DvBotlar)
 
 
 
