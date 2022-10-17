@@ -29,7 +29,7 @@ bot = Client(
 ## Əmrlər --------------------------------
 @bot.on_message(filters.command(['start']))
 def start(client, message):
-    MusicAzBot = f'[👋](https://telegra.ph/file/37232da6ee1464e42a586.jpg) Salam @{message.from_user.username}\n\nMən Bir musiqi botuyam və məndən istifade asandir\n Bir problem olduqda Sahiblə əlaqəyə keçin .\nMusiqi  yükləmək üçün:\n1) /song (musiqi adı)\n2) /song (youtube linki)\n3 /video video adı\n4 /video (youtube linki) Xəta əmələ gələrsə sahiblə əlaqə yaradın'
+    MusicAzBot = f'[👋](https://telegra.ph/file/cad7038fe82e47f79c609.jpg) Salam @{message.from_user.username}\n\nMən Bir musiqi botuyam və məndən istifade asandir\n Bir problem olduqda Sahiblə əlaqəyə keçin .\nMusiqi  yükləmək üçün:\n1) /song (musiqi adı)\n2) /song (youtube linki)\n3 /video video adı\n4 /video (youtube linki) Xəta əmələ gələrsə sahiblə əlaqə yaradın'
     message.reply_text(
         text=MusicAzBot, 
         quote=False,
