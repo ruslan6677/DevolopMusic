@@ -29,7 +29,7 @@ bot = Client(
 ## Əmrlər --------------------------------
 @bot.on_message(filters.command(['start']))
 def start(client, message):
-    MusicAzBot = f'[👋](https://www.google.com/search?q=music&tbm=isch&ved=2ahUKEwjtstyZz-f6AhWNp4sKHe0bB94Q2-cCegQIABAC&oq=music&gs_lcp=ChJtb2JpbGUtZ3dzLXdpei1pbWcQAzIECAAQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIECAAQQzoGCAAQCBAeOgYIABAHEB46CAgAEAgQBxAeUMIUWJ8aYNknaABwAHgAgAHbAYgB3QySAQUwLjguMZgBAKABAcABAQ&sclient=mobile-gws-wiz-img&ei=BnpNY-2XJI3PrgTtt5zwDQ&client=ms-android-samsung-gj-rev1&prmd=vin#imgrc=OAoTkeBiFOPeGM) Salam @{message.from_user.username}\n\nMən Bir musiqi botuyam və məndən istifade asandir\n Bir problem olduqda Sahiblə əlaqəyə keçin .\nMusiqi  yükləmək üçün:\n1) /song (musiqi adı)\n2) /song (youtube linki)\n3 /video video adı\n4 /video (youtube linki) Xəta əmələ gələrsə sahiblə əlaqə yaradın'
+    MusicAzBot = f'[👋](https://telegra.ph/file\/e0d9ac0adc798f77608dd.jpg) Salam @{message.from_user.username}\n\nMən Bir musiqi botuyam və məndən istifade asandir\n Bir problem olduqda Sahiblə əlaqəyə keçin .\nMusiqi  yükləmək üçün:\n1) /song (musiqi adı)\n2) /song (youtube linki)\n3 /video video adı\n4 /video (youtube linki) Xəta əmələ gələrsə sahiblə əlaqə yaradın'
     message.reply_text(
         text=MusicAzBot, 
         quote=False,
