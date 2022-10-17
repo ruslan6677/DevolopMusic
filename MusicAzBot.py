@@ -1,6 +1,6 @@
-#sahibim #HuseynH
+#sahibim #Ruslan
 
-#əməyə xatir kanala qoşulun @Botlarm
+#əməyə xatir kanala qoşulun @DvBotlar
 import os, youtube_dl, requests, aiohttp, wget, time
 from config import Config
 from youtube_search import YoutubeSearch
@@ -29,7 +29,7 @@ bot = Client(
 ## Əmrlər --------------------------------
 @bot.on_message(filters.command(['start']))
 def start(client, message):
-    MusicAzBot = f'[👋](https://telegra.ph/file/37232da6ee1464e42a586.jpg) Salam @{message.from_user.username}\n\nMən sizin üçün musiqini yükləmə botuyam.Məndən istifadə etmək çox asanddır.\nMusiqi  yükləmək üçün:\n1) /song (musiqi adı)\n2) /song (youtube linki)\n3 /video video adı\n4 /video (youtube linki) Xəta əmələ gələrsə sahiblə əlaqə yaradın'
+    MusicAzBot = f'[👋](https://telegra.ph/file/37232da6ee1464e42a586.jpg) Salam @{message.from_user.username}\n\nMən Bir musiqi botuyam və məndən istifade asandir\n Bir problem olduqda Sahiblə əlaqəyə keçin .\nMusiqi  yükləmək üçün:\n1) /song (musiqi adı)\n2) /song (youtube linki)\n3 /video video adı\n4 /video (youtube linki) Xəta əmələ gələrsə sahiblə əlaqə yaradın'
     message.reply_text(
         text=MusicAzBot, 
         quote=False,
@@ -45,7 +45,7 @@ def start(client, message):
                         "🔊 Playlis", url=f"https://t.me/{Config.PLAYLIST_NAME}"
                     ),
                   InlineKeyboardButton(
-                        "🔊 Playlis", url=f"https://t.me/{Config.PLAYLIST_NAME}"
+                        "🧑‍⚖️ Sahibim", url=f"https://t.me/{Config.BOT_OWNER}"
                     ),
                 ],
                 [                     
@@ -62,7 +62,7 @@ def start(client, message):
 #alive mesaji
 @bot.on_message(filters.command("alive") & filters.user(Config.BOT_OWNER))
 async def live(client: Client, message: Message):
-    livemsg = await message.reply_text('`Mən İşləyirəm MusicAzBot`')
+    livemsg = await message.reply_text('`Mükəmməl işləyirəm DevolopMusic`')
     
 #musiqi əmri#
 
@@ -85,7 +85,7 @@ def song(_, message):
         m.edit("İstədiyiniz musiqi tapılmadı 😔")
         print(str(e))
         return
-    m.edit("`📥 Musiqini tapdım və endirirəm.`")
+    m.edit("`📥 Musiqini tapdım və yükləyirəm.`")
     try:
         with yt_dlp.YoutubeDL(ydl_ops) as ydl:
             info_dict = ydl.extract_info(link, download=False)
