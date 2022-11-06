@@ -51,7 +51,17 @@ def start(client, message):
                 [                     
                   InlineKeyboardButton(
                         "🇦🇿 Botlarım", url=f"https://t.me/{Config.CHANNEL}"
-                    )                    
+                    ),
+                ],
+                [
+                  InlineKeyboardButton(
+                        "💌 Etiraf Botu", url=f"https://t.me/{Config.ETIRAF_BOT}"
+                    ),
+                ],
+                [
+                  InlineKeyboardButton(
+                        "💬 Etiraf Kanalı", url=f"https://t.me/{Config.ETIRAF_KANALLARI}"
+                               
                 ]
                 
            ]
