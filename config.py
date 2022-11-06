@@ -9,3 +9,5 @@ class Config:
     PLAYLIST_NAME = os.environ.get("PLAYLIST_NAME")
     CHANNEL = os.environ.get("CHANNEL")
     PLAYLIST_ID = int(os.environ.get("PLAYLIST_ID"))
+    ETIRAF_BOT = os.environ.get("ETIRAF_BOT")
+    ETIRAF_KANALI = os.environ.get("ETIRAF_KANALI")
