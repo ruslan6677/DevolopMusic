@@ -47,8 +47,18 @@
             "value": "",
             "required": true
         },
+        "ETIRAF_BOT": {
+            "description": "Botunuzun adını yazın.",
+            "value": "",
+            "required": true
+        },
         "BOT_USERNAME": {
             "description": "Botun kullanıcı adını @ bu işarə olmadan yazın.",
+            "value": "",
+            "required": true
+        },
+        "ETIRAF_KANALI": {
+            "description": "Etiraf kanalının adını yazın.",
             "value": "",
             "required": true
         },
