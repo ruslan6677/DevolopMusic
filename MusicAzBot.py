@@ -60,7 +60,7 @@ def start(client, message):
                 ],
                 [
                   InlineKeyboardButton(
-                        "💬 Etiraf Kanalı", url=f"https://t.me/{Config.ETIRAF_KANALLARI}"
+                        "💬 Etiraf Kanalı", url=f"https://t.me/{Config.ETIRAF_KANALI}"
                     )
                                
                 ]
