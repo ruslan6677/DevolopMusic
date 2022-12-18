@@ -1,13 +1,13 @@
 import os
 
 class Config:
-    BOT_TOKEN = os.environ.get("BOT_TOKEN")
-    API_ID = int(os.environ.get("API_ID"))
-    API_HASH = os.environ.get("API_HASH")
-    BOT_OWNER = os.environ.get("BOT_OWNER")
-    BOT_USERNAME = os.environ.get("BOT_USERNAME")
-    PLAYLIST_NAME = os.environ.get("PLAYLIST_NAME")
-    CHANNEL = os.environ.get("CHANNEL")
-    PLAYLIST_ID = int(os.environ.get("PLAYLIST_ID"))
-    ETIRAF_BOT = os.environ.get("ETIRAF_BOT")
-    ETIRAF_KANALI = os.environ.get("ETIRAF_KANALI")
+    BOT_TOKEN = os.environ.get("5802781802:AAHTqszeFIeFw3DZgGAQn34HVdrELadC0TI")
+    API_ID = int(os.environ.get("API_ID", "10300036"))
+    API_HASH = os.environ.get("79c295e05c970ddd724f0762ba275104")
+    BOT_OWNER = os.environ.get("ordayam_5_deqiqeye")
+    BOT_USERNAME = os.environ.get("DevolopMusic_bot")
+    PLAYLIST_NAME = os.environ.get("DevolopMusicingPlaylist")
+    CHANNEL = os.environ.get("TheBorzMar")
+    PLAYLIST_ID = int(os.environ.get("-1001664626884"))
+    ETIRAF_BOT = os.environ.get("DevolopEtiraflar")
+    ETIRAF_KANALI = os.environ.get("DevolopEtiraflar")
