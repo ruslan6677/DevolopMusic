@@ -8,6 +8,6 @@ class Config:
     BOT_USERNAME = os.environ.get("DevolopMusic_bot")
     PLAYLIST_NAME = os.environ.get("DevolopMusicingPlaylist")
     CHANNEL = os.environ.get("TheBorzMar")
-    PLAYLIST_ID = int(os.environ.get("-1001664626884"))
+    PLAYLIST_ID = int(os.environ.get("PLAYLIST_ID", "-1001664626884"))
     ETIRAF_BOT = os.environ.get("DevolopEtiraflar")
     ETIRAF_KANALI = os.environ.get("DevolopEtiraflar")
