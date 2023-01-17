@@ -40,7 +40,7 @@ async def make_carbon(code):
 
 
 @bot.on_message(filters.command("carbon"))
-async def carbon_func(bot: rphn, msg: Message):
+async def carbon_func(bot: bot, msg: Message):
     m = await msg.reply_text("`Hazırlanır`")
     carbon = await make_carbon(msg.reply_to_message.text)
     await m.edit("`Göndərilir`")
