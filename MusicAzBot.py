@@ -26,27 +26,27 @@ bot = Client(
 
 aiohttpsession = ClientSession()
 
-async def get_http_status_code(url: str) -> int:
-    async with aiohttpsession.head(url) as resp:
-        return resp.status
 
+async def get_http_status_code(url: str) -> int:
+    async with aiohttpsession.head(url) as resp:
+        return resp.status
+    
 
 async def make_carbon(code):
-    url = "https://carbonara.vercel.rphn/api/cook"
-    async with aiohttpsession.post(url, json={"code": code}) as resp:
-        image = BytesIO(await resp.read())
-    image.name = "carbon.png"
-    return image
+    url = "https://carbonara.vercel.app/api/cook"
+    async with aiohttpsession.post(url, json={"code": code}) as resp:
+        image = BytesIO(await resp.read())
+    image.name = "carbon.png"
+    return image
 
-
-@bot.on_message(filters.command("carbon"))
-async def carbon_func(bot: bot, msg: Message):
-    m = await msg.reply_text("`Hazırlanır`")
-    carbon = await make_carbon(msg.reply_to_message.text)
-    await m.edit("`Göndərilir`")
-    await bot.send_photo(msg.chat.id, photo=carbon)
-    await m.delete()
-    carbon.close()
+@app.on_message(filters.command("carbon"))
+async def carbon_func(bot: app, msg: Message):
+    m = await msg.reply_text("Hazırlanır")
+    carbon = await make_carbon(msg.reply_to_message.text)
+    await m.edit("Göndərilir")
+    await bot.send_photo(msg.chat.id, photo=carbon)
+    await m.delete()
+    carbon.close()
 
 
 
