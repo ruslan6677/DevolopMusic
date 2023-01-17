@@ -196,7 +196,5 @@ async def vsong(client, message):
         print(e)
 
 
-bot.start()
-print("Bot başladı!")
 idle()
 bot.run()
