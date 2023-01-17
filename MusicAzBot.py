@@ -16,6 +16,13 @@ from pyrogram.types import (
     Message
 )
 
+bot = Client(
+    'MusicAzBot',
+    bot_token = Config.BOT_TOKEN,
+    api_id = Config.API_ID,
+    api_hash = Config.API_HASH
+)
+
 
 aiohttpsession = ClientSession()
 
@@ -42,14 +49,6 @@ async def carbon_func(bot: rphn, msg: Message):
     carbon.close()
 
 
-#config#
-
-bot = Client(
-    'MusicAzBot',
-    bot_token = Config.BOT_TOKEN,
-    api_id = Config.API_ID,
-    api_hash = Config.API_HASH
-)
 
 #start mesajı
 
