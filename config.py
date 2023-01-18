@@ -12,5 +12,6 @@ class Config:
     ETIRAF_BOT = os.environ.get("ETIRAF_BOT")
     ETIRAF_KANALI = os.environ.get("ETIRAF_KANALI")
     BOT_NAME = os.environ.get("Devolop Music")
-    SUDO_USER = int(os.environ.get(""))
-    OWNER_ID = int(os.environ.get(""))
+    SUDO_USER = int(os.environ.get("5324143657"))
+    OWNER_ID = int(os.environ.get("5324143657"))
+    BOT_ID = int(os.environ.get("5989349944"))
