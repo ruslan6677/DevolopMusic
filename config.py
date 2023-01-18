@@ -13,3 +13,4 @@ class Config:
     ETIRAF_KANALI = os.environ.get("ETIRAF_KANALI")
     BOT_NAME = os.environ.get("Devolop Music")
     SUDO_USER = int(os.environ.get(""))
+    OWNER_ID = int(os.environ.get(""))
