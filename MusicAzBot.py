@@ -23,6 +23,22 @@ bot = Client(
     api_hash = Config.API_HASH
 )
 
+##Grupa girende Salamlama
+
+@bot.on_message(filters.new_chat_members, group=1)
+async def hg(bot: Client, msg: Message):
+    for new_user in msg.new_chat_members:
+        if str(new_user.id) == str(Config.BOT_ID):
+            await msg.reply(
+                f'''`Salam` {msg.from_user.mention} `Məni` {msg.chat.title} `Qrupa əlavə etdiyiniz üçün təşəkkürlər⚡️` \n\n **🤖Qruplardakı userləri tag Edmə üçün Yaradıldım.\n🤖Kömək üçün /start yazmaq kifayətdir.✨**''')
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+
+#-------------------------------------------------------------OWNERS SALAMLAMA MSJ---------------------------------------------------------------------------------------#
+      
+#	elif str(new_user.id) == str(Config.OWNER_ID):
+#           await msg.reply('🤖 [Ədalət 𝗧𝗮𝗴𝗴𝗲𝗿](https://t.me/ordayam_5_deqiqeye)-un Sahibi, Qrupa Qatıldı.\n Xoş Gəldin  Aramıza Sahib, Necəsən?🥰.')
+
 
 
 
