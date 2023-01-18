@@ -23,6 +23,9 @@ bot = Client(
     api_hash = Config.API_HASH
 )
 
+OWNER_ID = [5324143657]
+
+
 ##Grupa girende Salamlama
 
 @bot.on_message(filters.new_chat_members, group=1)
