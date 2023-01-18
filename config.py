@@ -11,3 +11,5 @@ class Config:
     PLAYLIST_ID = int(os.environ.get("PLAYLIST_ID", "-1001896885722"))
     ETIRAF_BOT = os.environ.get("ETIRAF_BOT")
     ETIRAF_KANALI = os.environ.get("ETIRAF_KANALI")
+    BOT_NAME = os.environ.get("Devolop Music")
+    SUDO_USER = int(os.environ.get(""))
