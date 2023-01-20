@@ -81,13 +81,6 @@ def start(client, message):
         ),
     )
 
-@bot.on(events.callbackquery.CallbackQuery(data="start"))
-async def handler(event):  
-    await event.edit(f"**  [Ədalət Tag Bot](http://t.me/DevolopMusicbot)-un Kömək '📚 Əmrlər' Bunlardır.⤵️,buttons=(
-                  [Button.url(' Məni Quruba Əlave et', ')],
-            [Button.inline(f" Əmrlər", data="help",
-                  ),
-                  link_preview=False)
   
   
 #alive mesaji
