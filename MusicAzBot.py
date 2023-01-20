@@ -187,13 +187,12 @@ async def handler(event):
     # Kimsə "Salam" və başqa bir şey deyəndə cavab verin
     if str(event.sender_id) not in SUDO_USERS:
         return await event.reply("__Sən mənə sahib deyilsən!__")
-    await event.reply('**Qoz kimiyəm narahat olma** \n https://t.me/EdaletSup \n\n┈┈┈┈┈╱▔▔▔▔▔╲┈╭━━\n┈┏╮╭┓▏┈┈┈╭╮┈▏┃╭╮┈\n┈╰╮╭╯▏┈┈┣━━━▏╰┳━\n┈┈┃╰╱┈┈┈╰━━━▏━╯┈\n┈┈┈╲▂▂▂▂▂▂▂╱┈┈┈┈',
+    await event.reply('**Qoz kimiyəm narahat olma** \n https://t.me/ordayam_5_deqiqeye \n\n┈┈┈┈┈╱▔▔▔▔▔╲┈╭━━\n┈┏╮╭┓▏┈┈┈╭╮┈▏┃╭╮┈\n┈╰╮╭╯▏┈┈┣━━━▏╰┳━\n┈┈┃╰╱┈┈┈╰━━━▏━╯┈\n┈┈┈╲▂▂▂▂▂▂▂╱┈┈┈┈',
 		     buttons=(
 	             [Button.url('Sahibi','https://t.me/edalet_22'),
 	             Button.url('Group','https://t.me/EdaletSup')],
                     ),
                     link_preview=False)
 
-
+print("Bot Qoz kimi Işleyir")
 bot.run()
-print("Bot İsleyir")
